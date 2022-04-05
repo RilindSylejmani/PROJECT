@@ -1,0 +1,58 @@
+.create-form {
+    border: 15px solid blue;
+    width: 500px;
+    padding-left: 227px;
+    padding-right: 92px;
+    padding-top: 73px;
+    padding-bottom: 51px;
+    margin-left: 450px;
+    margin-top: 91px;
+}
+
+.file-image {
+    margin-bottom: 20px;
+    margin-left: 68px;
+}
+
+.text-name {
+    margin-bottom: 20px;
+    margin-left: 54px;
+}
+
+.text-price {
+    margin-bottom: 20px;
+    margin-left: 112px;
+}
+
+.textarea-body {
+    margin-bottom: 20px;
+    margin-left: 155px;
+}
+
+#category {
+    margin-bottom: 20px;
+    margin-left: 38px;
+}
+
+.file-image1 {
+    margin-bottom: 20px;
+    margin-left: 34px;
+}
+
+.file-image2 {
+    margin-bottom: 20px;
+    margin-left: 36px;
+}
+
+.submit-save {
+    margin-left: 183px;
+}
+
+.title-form {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.submit-form {
+    text-align: center;
+}
