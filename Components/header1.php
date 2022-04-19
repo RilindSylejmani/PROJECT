@@ -7,7 +7,7 @@
         display: flex;
         border: 1px solid black;
         background-color: black;
-        height: 100px;
+        height: 100x;
         max-width:100%
     }
     
@@ -144,7 +144,7 @@
                         </a>
                         <a href="../Pages/Toys.php">
                             <li>Toys</a></li>
-</a>
+                        </a>
                         </ul>
 
                     </div>
@@ -165,8 +165,25 @@
                 <a href="../Contact/contact.php">
                 <li>Contact</li>
                 </a>
+                <a href="../views/signup.php">
+                <li>Sign up</li>
+                </a>
+                <?php
+                if ($_SESSION['roli']==2){
+                ?>
+                <li><a href="../views.menuDashboard.php">Admin Page</a></li>
+                <li><a href="../views/logout/php">Log out</a></li>
+                <?php
+                }
+                ?>                
+                <?php
+                if ($_SESSION['roli']==2){
+                ?>
+                <li><a href="../views/logout/php">Log out</a></li>
+                <?php
+                }
+                ?>
                 
-                <li>Sign in</li>
             </ul>
         </div>
     </div>

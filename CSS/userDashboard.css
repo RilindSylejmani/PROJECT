@@ -1,0 +1,46 @@
+.logo{
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+
+}
+.cart-container{
+    justify-content: center;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 125%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.cart-container thead tr{
+    background-color: blue;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.cart-container th,
+.cart-container td {
+  padding: 12px 15px;
+}
+
+.my-cart{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.cart-container{
+  color: black;
+  font-size: 22px;
+  padding-left: 50%;
+  position: relative;
+  top: 20px;
+}
+.cart-container{
+    font-size: 30px;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+}
