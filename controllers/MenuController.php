@@ -130,12 +130,12 @@ class MenuController{
      }
 
      public function sendMessages($request) {
-         $query = $this->db->pdo->prepare('INSERT INTO contact (sender_name, sender-email, sender_comment)
-            VALUES (:sender_name, :sender-email, :sender_comment)');
+         $query = $this->db->pdo->prepare('INSERT INTO contact (sender_name, sender_email, sender_comment)
+            VALUES (:sender_name, :sender_email, :sender_comment)');
 
-         $query->bindParam(':sender_name', $request['sender_name']);
-         $query->bindParam(':sender_email', $request['sender-email']);
-         $query->bindParam(':sender_comment', $request['sender_comment']);
+         $query->bindParam(':sender_name', $request['name']);
+         $query->bindParam(':sender_email', $request['email']);
+         $query->bindParam(':sender_comment', $request['comment']);
 
          $query->execute();
         //  return header('Location: ../views/contactDashboard.php');
@@ -150,5 +150,4 @@ class MenuController{
      }
 }
 
-
-
+?>

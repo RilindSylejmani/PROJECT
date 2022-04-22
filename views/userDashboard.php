@@ -10,16 +10,14 @@
     <link rel="stylesheet" href="../Css/userDashboard.css">
     </head>
     <body>
-    <!--?php
-        if (isset($_SESSION['user_role']) && $_SESSION['user_role']==2) {
-    ?-->
+    
         <nav class="navbar">
         <div class="container">
             <div class="logo">
             Admin Page    
             </div>
             <ul class="nav">
-            <li><a href="./userControllers.php"></a></li>
+            
             </ul>
         </div>
         </nav>
@@ -74,8 +72,6 @@
         <a class="redirect" href="../pages/firstPage.php">Go to website</a>
     
         
-    <!--?php
-        }
-    ?-->
+    
     </body>
 </html>

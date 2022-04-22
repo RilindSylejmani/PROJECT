@@ -40,11 +40,11 @@
 
 .info ul {
     display: flex;
-    margin: 5px;
+    margin: -46px;
 }
 
 .info ul li {
-    margin-left: 438px;
+    margin-left: 317px;
     font-size: 23px;
     border-bottom: 3px solid rgb(247, 139, 139);
 }
@@ -61,23 +61,24 @@
 }
 
 .info1 ul li {
-    margin-left: 519px;
+    margin-left: 365px;
     font-size: 23px;
     border-bottom: 3px solid rgb(247, 139, 139);
 }
 
 .big-border {
     border: 4px solid rgb(247, 139, 139);
-    width: 90%;
-    height: 51%;
+    width: 94%;
+    height: 65%;
     position: absolute;
     top: 447px;
-    left: 94px;
+    left: 50px;
+    margin-bottom: 20px;
 }
 
 .text h1 {
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     font-family: 'Nanum Myeongjo', serif;
 } 
 </style>

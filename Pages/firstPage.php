@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <head>
     <!-- <link rel="stylesheet" type="text/css" href="../Components/header.css"> 
     <link rel="stylesheet" type="text/css" href="../CSS/firstPage.css">  -->
@@ -21,8 +24,8 @@
     width: 73%;
     height: 382px;
     
-    left: 253px;
-    top: 166px;
+    left: 200px;
+    top: 218px;
 }
 
 .prev,
@@ -108,7 +111,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin-top:515px;
+  margin-top:432px;
     }
     
     .products-border {
@@ -168,8 +171,8 @@ require_once '../controllers/MenuController.php';
                 <a href="Clothes.php">
                     <div class="mySlides fade">
 
-                        <img class="Photo" src="https://339621-1046748-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/IS_Website_Cat_Banners_0421_FA_01_12_Desktop.jpg" style=" width:100% ">
-
+                        <img class="Photo" src="https:/339621-1046748-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/IS_Website_Cat_Banners_0421_FA_01_12_Desktop.jpg" style=" width:100% ">
+/
                     </div>
                 </a>
 
@@ -201,7 +204,7 @@ require_once '../controllers/MenuController.php';
             <script src="../JS/slider.js"></script> 
 
             <?php
-    require_once '../Components/header1.php'
+    include '../Components/header1.php'
     ?>
 
 

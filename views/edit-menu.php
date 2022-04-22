@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     Price:
     <input class="text-price" type="number" name="price" value="<?php echo $currenMenu['menu_price'];?>">
     <br>
-    <input type="text" name="body" value="<?php echo $currenMenu['menu_body'];?>"> -->
+    <!-- <input type="text" name="body" value="<?php echo $currenMenu['menu_body'];?>"> -->
     <textarea class="textarea-body" name="body"  cols="30" rows="10" placeholder="About Product"></textarea>
     <br>
     Choose Category:

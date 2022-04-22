@@ -24,7 +24,7 @@ class userControllers{
         $password=password_hash($request->getPassword(), PASSWORD_BCRYPT);
         $role=$request->getRole();
 
-        $query = $this->db->pdo->prepare('INSERT INTO useri (Name, Surname, Dateofbirth, Username, Email, Password, user_role)
+        $query = $this->db->pdo->prepare('INSERT INTO useri (name, surname, dateofbirth, username, email, password, user_role)
         VALUES (:Name, :Surname, :DateofBirth, :Username, :Email, :Password, :user_role)');
        
         $query->bindParam(':Name',$name);

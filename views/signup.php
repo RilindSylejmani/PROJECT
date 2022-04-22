@@ -2,7 +2,7 @@
 
 require_once '../controllers/userControllers.php';
 require_once '../config/Database.php';
-require_once './userDashboard.php';
+// require_once './userDashboard.php';
 require_once './user.php';
 
 $db = new Database;
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
 
     if(empty(trim($name)) || empty(trim($surname)) || empty(trim($dateofbirth)) || empty(trim($username)) || empty(trim($email)) || empty(trim($password))){
         array_push($errors, 'Mbush te gjitha fushat!');
-    }/*else{
+    }else{
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
             array_push($errors, 'Email nuk eshte i sakte!');
         }
@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
         if(!preg_match("/^[A-Za-z]{6,}$/",$username)){
             array_push($errors, 'Invalid username');
         }
-    }*/
+    }
     $queryE = $db->pdo->query("SELECT * FROM `useri` WHERE `email` LIKE '$email'");
     $queryU = $db->pdo->query("SELECT * FROM `useri` WHERE `username` LIKE '$password'");
 
@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
 
 <html>
     <head>
-        <link rel="stylesheet" href="../Css/signup.css">
+        <!-- <link rel="stylesheet" href="../CSS/signup.css"> -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -89,7 +89,7 @@ if(isset($_POST['submit'])){
                     foreach($_SESSION["errors"] as $error)
                         echo '<p class="error">'.$error.'</p>';
                 ?>
-                    <form class="Signup" method="POST">
+                    <form class="login-form" method="POST">
                         <input id="name" class="Name" type="text" align="center" placeholder="Name.." name="name"> <br><br>
                         <input id="surname" class="Surname" type="text" align="center" placeholder="surname.." name="surname"> <br><br>
                         <input id="dateofbirth" class="Date" type="date" align="center" placeholder="dateofbirth.." name="dateofbirth"> <br><br>
@@ -110,3 +110,133 @@ if(isset($_POST['submit'])){
     </body>
 </hml>
     
+<style>
+.log-in {
+  padding-top: 40px;
+  color: rgb(247, 139, 139);
+  
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.account-page {
+  position: relative;
+  background-color: #ffffff;
+  width: 400px;
+  
+  margin: 5em auto;
+  border-radius: 1.5em;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.firstInfo {
+    width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.Date {
+    width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.Surname {
+    width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.Name{
+    width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+    .password{
+        width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+ 
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+    }
+
+    .submit {
+      
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+  margin-left: 35%;
+  font-size: 13px;
+ 
+}
+</style>
